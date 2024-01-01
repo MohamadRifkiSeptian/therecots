@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  display: grid;
+  justify-content: center;
+}
+#container{
+  display: grid;
+  justify-items: center;
+  width: 80vw;
+  header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    .logo{
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 15px;
+      img{
+        width: 100px;
+      }
+    }
+    form{
+      display: flex;
+      gap:15px;
+      input{
+        width: 550px;
+        height: 50px;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      button{
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        img{
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  section{
+    width: 100%;
+    margin: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    .cards{
+      width: 220px;
+      height: 365px;
+      border-radius: 20px;
+      background-color: #F4F4F4;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding: 2px;
+      .imgProduk{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: white;
+
+      }
+      .infoProduk{
+        width: 200px;
+        height: 130px;
+        font-size: 12px;
+        display: grid;
+        h1{
+          font-weight: 400;
+          font-size: 14px;
+          height: 35px;
+          overflow: hidden;
+        }
+        .noProduk{
+          width: 50px;
+          height: 17px;
+          border: 1px solid black;
+          text-align: center;
+        }
+        .hargaProduk{
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .linkProduk{
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          .linkTokopedia{
+            width: 87px;
+            height: 30px;
+            border: 2px solid black;
+            font-weight: bold;
+            display: block;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            color: black;
+          }
+          .linkShopee{
+            width: 87px;
+            height: 30px;
+            border: 2px solid black;
+            font-weight: bold;
+            display: block;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    width: 100%;
+    height: 100px;
+  }
+}
